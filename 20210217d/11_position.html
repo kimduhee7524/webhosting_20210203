@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border:10px solid black;
+            width:100px;
+            height: 100px;
+        }
+        .red
+        {
+            background-color: red;
+            position: static;
+            left: 50px; /*값을 줘도 소용없음*/
+        }
+        .green
+        {
+            background-color: springgreen;
+            position: relative;
+            left: 50px; /*월래자리를 기준으로 이동*/
+            
+        }
+        .blue
+        {
+            background-color:skyblue;
+            position: fixed;
+            left: 500px; /*모니터 좌측 상단(0,0)을 기준으로 이동*/
+            top:500px;
+        }
+        .pink
+        {
+            background-color: hotpink;
+            position: absolute;
+            left: 20px;/*부모태그의 좌측상단(0,0)을 기준 단, 부모태그가 static이 아닐 때*/
+            top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <div class="box pink">1</div>
+    </div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    
+
+    
+    <div class="box green">
+        <div class="box pink">2</div>
+    </div>
+</body>
+</body>
+</html>

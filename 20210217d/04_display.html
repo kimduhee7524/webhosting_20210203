@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*p,div 블록->전체차지
+        span-> inline->적은 만큼*/
+        span
+        {
+            background-color: cyan;
+        }
+        div
+        {
+            background-color: red;
+        }
+        p
+        {
+            background-color: pink;
+        }
+        #box
+        {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        p:nth-of-type(2)
+        {
+           /* display: none;*/
+           visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <span>김두희 히히</span>
+    <div id="box">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+    </div>
+    <div id="box2">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+</body>
+</html>
